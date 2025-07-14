@@ -1,0 +1,91 @@
+
+@font-face {
+  font-family: 'Epilogue';
+  src: url('https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&display=swap');
+}
+
+@import "tailwindcss";
+
+@theme {
+  --font-epilogue : "Epilogue", sans-serif;
+  --color-neutral-0: #FAF8F6;
+  --color-neutral-2200: #F3EDE7;
+  --color-neutral-5500: #49566D;
+  --color-neutral-9900: #172339;
+  --color-Eupatorium-purple-200: #A060FF;
+  --color-Eupatorium-purple-500: #CB30E3;
+  --color-orange-00: #FFA84E;
+  --radius-10: 0.625rem;
+  --radius-15: 0.9375rem;
+  --tracking-1: 1px;
+  --tracking-2: 0.78px;
+  --tracking-3: 0.53px;
+  --tracking-4: 0.5px;
+  --tracking-5: 0.11px;
+  --tracking-6: 0.18px;
+  --tracking-7: 0.1px;
+  --tracking-8: 0.16px;
+  --tracking-9: 2.5px;
+  --text-56: 3.5rem;
+  --text-38: 2.375rem;
+  --text-15: 0.9375rem;
+}
+
+@layer components {
+  .tp-1 {
+    @apply font-epilogue text-7xl -tracking-1 leading-[1.1]
+  }
+
+  .tp-1-bold {
+    @apply font-epilogue font-bold text-7xl -tracking-1 leading-[1.1]
+  }
+
+  .tp-1-tablet {
+    @apply font-epilogue text-56 -tracking-2 leading-[1.1]
+  }
+
+  .tp-1-tablet-bold {
+    @apply font-epilogue font-bold text-56 -tracking-2 leading-[1.1]
+  }
+
+  .tp-1-mobile {
+    @apply font-epilogue text-38 -tracking-3 leading-[1.1]
+  }
+
+  .tp-1-mobile-bold {
+    @apply font-epilogue font-bold text-38 -tracking-3 leading-[1.1]
+  }
+
+  .tp-2 {
+    @apply font-epilogue text-5xl -tracking-4 leading-[1.2]
+  }
+
+  .tp-2-bold {
+    @apply font-epilogue font-bold text-5xl -tracking-4 leading-[1.2]
+  }
+
+  .tp-3 {
+    @apply font-epilogue text-xl tracking-5 leading-[1.6]
+  }
+
+  .tp-4 {
+    @apply font-epilogue text-lg -tracking-6 leading-[1.6]
+  }
+
+  .tp-5 {
+    @apply font-epilogue text-lg tracking-7 leading-[1.6]
+  }
+
+  .tp-6 {
+    @apply font-epilogue font-bold text-base -tracking-8 leading-[1.5]
+  }
+
+  .tp-7 {
+    @apply font-epilogue text-base tracking-9 leading-[1.5]
+  }
+
+  .tp-8 {
+    @apply font-epilogue text-15 tracking-normal leading-[1.6]
+  }
+}
+
